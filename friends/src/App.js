@@ -1,8 +1,8 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom';
 
-import Login from './components/Login';
-import GasPrices from './components/GasPrices';
+import Login from './login.js';
+import GasPrices from './gasPrices';
 
 function App() {
   return (
