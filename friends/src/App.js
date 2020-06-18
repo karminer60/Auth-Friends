@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom';
 
 import Login from './login.js';
-import GasPrices from './gasPrices';
+import PrivateRoute from './smurfList';
 
 function App() {
   return (
@@ -17,7 +17,7 @@ function App() {
           </li>
         </ul>
         <Switch>
-          <Route exact path="/protected" component={GasPrices} />
+          <Route exact path="/protected" component={PrivateRoute} />
           <Route path="/login" component={Login} />
           <Route component={Login} />
         </Switch>
